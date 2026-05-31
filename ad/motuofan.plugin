@@ -1,0 +1,12 @@
+#!name=摩托范去广告
+#!desc=摩托范弹窗广告、首页信息流广告拦截
+#!author=自用
+
+[Rule]
+DOMAIN,tracker.yfanads.com,REJECT
+
+[Rewrite]
+^https:\/\/api\.58moto\.com\/advert reject-dict
+
+[MITM]
+hostname = api.58moto.com
