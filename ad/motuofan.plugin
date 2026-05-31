@@ -3,7 +3,7 @@
 #!author=自用
 
 [Rewrite]
-^https?:\/\/api\.58moto\.com\/advert(?:\?|$) reject-dict
+^https?:\/\/api\.58moto\.com\/advert reject-dict
 
 [MITM]
 hostname = api.58moto.com
